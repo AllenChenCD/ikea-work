@@ -1,0 +1,779 @@
+
+<script>
+    require(['jquery'],function ($) {
+        var w_width = $(window).width();
+        if(w_width == 768){
+            $(".am-container").css("transform","scale(0.717757)");
+        }
+    })
+</script>
+<style>
+    .column.main{
+        overflow: hidden;
+    }
+    .am-cf:after {
+        content: " ";
+        display: table;
+    }
+    .am-cf:after {
+        clear: both;
+    }
+
+    .am-fl {
+        float: left;
+    }
+
+    .am-fr {
+        float: right;
+    }
+    a {
+        color: #333333;
+    }
+    .line {
+        width: 100%;
+
+    }
+    .am-container {
+        width: 1060px;
+        margin: 0 auto;
+        font-size: 16px;
+        font-family: Verdana, Microsoft YaHei;
+        transform-origin:left top;
+    }
+    .am-container img {
+        max-width: 100%;
+    }
+    .am-container .p
+    .am-container>div {
+        margin-bottom: 80px;
+        position: relative;
+    }
+    .product_description{
+        color: #1d1d1b;
+        display: block;
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .h-num{
+        font-size: 15px;
+        color: #1d1d1b;
+    }
+
+    .product-price {
+        font-size: 23px;
+        color: #1d1d1b;
+        font-weight: bold;
+    }
+
+    .col-fff {
+        color: #fff
+    }
+
+    .col-fff:visited,
+    .col-fff:hover {
+        color: #fff!important;
+    }
+
+    .ft-wt {
+        font-weight: bold;
+    }
+
+
+    .am-container a {
+        color: #1d1d1b
+    }
+
+    .to-buy {
+        font-size: 12px;
+        display: inline-block;
+        border: 2px solid #000;
+        border-radius: 5px;
+        padding: 1px 5px;
+        text-align: center;
+        background: #fff;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+        color: #1d1d1b;
+        /*margin-top: 5px;*/
+    }
+
+    .to-buy:hover {
+        text-decoration: none;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .flex > a {
+        display: block;
+        width: 49%;
+    }
+
+    .flex > a:hover {
+        text-decoration: none !important;
+    }
+
+
+    [class^="fix-position"]{
+        position: absolute;
+    }
+
+    .footer a, .footer-fixed .nav a {
+        color: #333333;
+    }
+
+    .footer-copyrigh .copyright {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 767px) {
+        .hidden-xs {
+            display: none !important;
+        }
+    }
+
+
+
+
+    @media (min-width: 768px){
+        .page-wrapper .page-main .columns{
+            max-width: 1060px!important;
+            padding: 0!important;
+        }
+        .page-wrapper .breadcrumbs{
+            max-width: 1060px!important;
+        }
+    }
+
+    .product_name{
+        font-size: 23px;
+        font-weight: bold;
+    }
+     .des_body{
+        font-size: 16px;
+        color: #1d1d1b;
+        text-align: justify;
+        line-height: 18px;
+    }
+
+    .rel{
+        position: relative;
+    }
+    .block{
+        display: block;
+        margin-bottom: 0;
+    }
+    .mg-30{
+    margin-bottom: 30px;
+    }
+
+    .t-justify{
+        text-align: justify;
+        text-justify:inter-ideograph;
+    }
+    .flex-start{
+        align-items: flex-start;
+    }
+    .absolute{
+        position: absolute;
+    }
+    .flex-img{
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex-img>a{
+        display: block;
+        width: 49%;
+    }
+    .jump-link{
+        position: absolute;
+        display: block;
+        width: 165px;
+        height: 165px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .moudle{
+        text-align: center;
+    }
+    .moudle-des{
+        font-size: 14px;
+        color: #202c6d;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .mg-top{
+        margin-top: 10px;
+    }
+    .am-title{
+        font-size: 17px;
+    }
+    .lower_title {
+        position: relative;
+        text-align: center;
+        height: 1px;
+        margin-bottom: 60px;
+    }
+    .lower_tag {
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9;
+        padding: 0 40px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .lower_line {
+        width: 100%;
+        height: 2px;
+        background: #333;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        z-index: 0;
+    }
+    .dev-line{
+        width: 100%;
+        height: 2px;
+        background: #333;
+    }
+    .counte-buy{
+        background: #1d1d1b;
+        padding: 3px 10px;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 5px;
+        font-size: 23px;
+        font-weight: bold;
+    }
+    .f1{
+
+    }
+    .f2{
+
+    }
+    .f3{
+
+    }
+    .f4{
+
+    }
+    .f5{
+
+    }
+    .f6{
+
+    }
+    .f7{
+
+    }
+    .f8{
+
+    }
+    .f9{
+
+    }
+    .f10{
+
+    }
+    .f12{
+
+    }
+    .f13{
+
+    }
+    .am-counte{
+        float: right;
+        text-align: right;
+        margin-top: 10px;
+    }
+    .counte-price{
+        font-size: 63px;
+        font-weight: bold;
+    }
+    .pro{
+        margin-bottom: 20px;
+        padding: 0 20px;
+        justify-content: flex-start;
+    }
+    .moudle-left{
+       width: 46.23%;
+    }
+    .moudle-right{
+        width: 51.13%;
+    }
+    .moudle-right{
+
+    }
+    .pro-img{
+        margin-right: 40px;
+        width: 30%;
+        text-align: center;
+    }
+    .am-container>div{
+        margin-bottom: 100px;
+    }
+    .red-line{
+        position: absolute;
+        height: 4px;
+        width: 70%;
+        transform: rotateZ(-3deg);
+        background: #ff0000;
+        opacity: 0.7;
+        top: 45%;
+        right: 0;
+    }
+    .ft-23{
+        font-size: 23px;
+        color: #1d1d1b;
+    }
+    .in-block{
+        display: inline-block;
+    }
+    .ft-32{
+        font-size: 32px;
+    }
+    .flex-end{
+        justify-content: flex-end;
+    }
+.combination{
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    position: relative;
+    top: -5px;
+}
+    .f4 .moudle-left{
+        width: 49.5%;
+    }
+    .f4 .moudle-right{
+        width: 46%;
+    }
+    .po-top-5{
+        position: relative;
+        top: -5px;
+    }
+    .f5 .am-products .pro{
+        width: 15%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .f5 .am-products .pro .pro-img{
+        width: 100%;
+    }
+    .f5 .am-products{
+        margin-top: 20px;
+    }
+</style>
+
+
+<div class="am-container hidden-xs">
+    <div>
+            <a href="" target="_blank">
+                <img src="{{media url="wysiwyg/2018-img/ipost-offer/banner.png"}}" alt="" />
+            </a>
+    </div>
+    <div class="am-title">
+        <div class="lower_title">
+            <span class="lower_tag">打造你的专属空间</span>
+            <div class="lower_line"></div>
+        </div>
+    </div>
+    <div class="f1 flex flex-start">
+        <div class="moudle-left">
+            <a href="" target="_blank">
+                <img src="{{media url="wysiwyg/2018-img/ipost-offer/f1.png"}}" alt="" />
+            </a>
+        </div>
+        <div class="moudle-right">
+            <div class="pro flex">
+                <div class="pro-img">
+                    <a href="" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f1-2.png"}}" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="/90227438.html&#10;">
+                        <span class="product_description">靠背椅 深绿色</span>
+                        <span class="product_name">STRANDMON 斯佳蒙</span>
+                        <div class="product-price ">&yen;1,299.00</div>
+                        <span class="h-num">货号: 503.598.45</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pro flex">
+                <div class="pro-img">
+                    <a href="" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f1-3.png"}}" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="/90227438.html&#10;">
+                        <span class="product_description">脚凳 深绿色</span>
+                        <span class="product_name">STRANDMON 斯佳蒙</span>
+                        <div class="product-price ">&yen;399.00</div>
+                        <span class="h-num">货号: 303.600.10</span>
+                    </a>
+                </div>
+            </div>
+            <div class="dev-line"></div>
+            <div class="am-counte">
+                <div class="in-block rel ft-23 ft-wt">
+                    原价 ：<span class="ft-32">&yen;1,698.00</span>
+                    <div class="red-line"></div>
+                </div>
+                <div class="ft-23 combination">
+                    <span class="ft-wt">组合购买 ：</span>
+                    <span class="counte-price"> &yen;1,599.00</span>
+                </div>
+                <span class="product_description po-top-5">此价格有效期: 2018.8.30-2018.10.22 </span>
+                <div class="counte-buy in-block ">
+                    为您节省 &yen;99.00
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="f2 flex flex-start">
+        <div class="moudle-left">
+            <a href="" target="_blank">
+                <img src="{{media url="wysiwyg/2018-img/ipost-offer/f2.png"}}" alt="" />
+            </a>
+        </div>
+        <div class="moudle-right">
+            <div class="pro flex">
+                <div class="pro-img">
+                    <a href="" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f2-2.png"}}" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="/90227438.html&#10;">
+                        <span class="product_description">遮光窗帘  2幅  灰色</span>
+                        <span class="product_name">MARJUN 马瑞恩</span>
+                        <div class="product-price ">&yen;299.00</div>
+                        <span class="h-num">货号: 502.984.23 </span>
+                    </a>
+                </div>
+            </div>
+            <div class="pro flex">
+                <div class="pro-img">
+                    <a href="" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f2-3.png"}}" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="/90227438.html&#10;">
+                        <span class="product_description">窗帘  2幅  白色</span>
+                        <span class="product_name">RUMSBLAD 鲁姆博</span>
+                        <div class="product-price ">&yen;149.00</div>
+                        <span class="h-num">货号: 703.448.05</span>
+                    </a>
+                </div>
+            </div>
+            <div class="dev-line"></div>
+            <div class="am-counte">
+                <div class="in-block rel ft-23 ft-wt">
+                    原价 ：<span class="ft-32">&yen;488.00</span>
+                    <div class="red-line"></div>
+                </div>
+                <div class="ft-23 combination">
+                    <span class="ft-wt">组合购买 ：</span>
+                    <span class="counte-price"> &yen;369.00</span>
+                </div>
+                <span class="product_description po-top-5">此价格有效期: 2018.8.30-2018.10.22 </span>
+                <div class="counte-buy in-block ">
+                    为您节省 &yen;79.00
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="f3 flex flex-start">
+        <div class="moudle-left">
+            <a href="" target="_blank">
+                <img src="{{media url="wysiwyg/2018-img/ipost-offer/f3.png"}}" alt="" />
+            </a>
+        </div>
+        <div class="moudle-right">
+            <div class="pro flex">
+                <div class="pro-img">
+                    <a href="" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f3-2.png"}}" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="/90227438.html&#10;">
+                        <span class="product_description">书架  白色</span>
+                        <span class="product_name">BILLY 毕利</span>
+                        <div class="product-price ">&yen;399.00</div>
+                        <span class="h-num">货号: 103.515.68</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pro flex">
+                <div class="pro-img">
+                    <a href="" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f3-3.png"}}" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="/90227438.html&#10;">
+                        <span class="product_description">半玻璃柜门  白色</span>
+                        <span class="product_name">OXBERG 奥克伯</span>
+                        <div class="product-price ">&yen;150.00</div>
+                        <span class="h-num">货号: 302.755.59</span>
+                    </a>
+                </div>
+            </div>
+            <div class="dev-line"></div>
+            <div class="am-counte">
+                <div class="in-block rel ft-23 ft-wt">
+                    原价 ：<span class="ft-32">&yen;699.00</span>
+                    <div class="red-line"></div>
+                </div>
+                <div class="ft-23 combination">
+                    <span class="ft-wt">组合购买 ：</span>
+                    <span class="counte-price"> &yen;599.00</span>
+                </div>
+                <span class="product_description po-top-5">此价格有效期: 2018.8.30-2018.10.22 </span>
+                <div class="counte-buy in-block ">
+                    为您节省 &yen;100.00
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="f4 flex flex-start">
+        <div class="moudle-left">
+            <a href="" target="_blank">
+                <img src="{{media url="wysiwyg/2018-img/ipost-offer/f4.png"}}" alt="" />
+            </a>
+        </div>
+        <div class="moudle-right">
+            <div class="pro flex">
+                <div class="pro-img">
+                    <a href="" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f4-2.png"}}" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="/90227438.html&#10;">
+                        <span class="product_description">椅子 粉红色/桦木椅面, 粉红色</span>
+                        <span class="product_name">LEIFARNE 雷夫尼</span>
+                        <div class="product-price ">&yen;499.00</div>
+                        <span class="h-num">货号:792.195.19</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pro flex">
+                <div class="pro-img">
+                    <a href="" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f4-3.png"}}" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="/90227438.html&#10;">
+                        <span class="product_description">桌子  白蜡木贴面</span>
+                        <span class="product_name">LISABO 利萨伯</span>
+                        <div class="product-price ">&yen;999.00</div>
+                        <span class="h-num">货号:803.657.17</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pro flex">
+                <div class="pro-img">
+                    <a href="" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f4-4.png"}}" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="/90227438.html&#10;">
+                        <span class="product_description">餐具18件  淡粉红色</span>
+                        <span class="product_name">DINERA 代诺拉</span>
+                        <div class="product-price ">&yen;179.00</div>
+                        <span class="h-num">货号:903.185.27</span>
+                    </a>
+                </div>
+            </div>
+            <div class="dev-line"></div>
+            <div class="am-counte">
+                <div class="in-block rel ft-23 ft-wt">
+                    原价 ：<span class="ft-32">&yen;3,174.00</span>
+                    <div class="red-line"></div>
+                </div>
+                <div class="ft-23 combination">
+                    <span class="ft-wt">组合购买 ：</span>
+                    <span class="counte-price"> &yen;2,999.00</span>
+                </div>
+                <span class="product_description po-top-5">此价格有效期: 2018.8.30-2018.10.22 </span>
+                <div class="counte-buy in-block ">
+                    为您节省 &yen;175.00
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="f5">
+        <div class="flex">
+            <a href="" target="_blank" style="width: 46%">
+                <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5.png"}}" alt="" />
+            </a>
+            <a href="" target="_blank" style="width: 52.5%">
+                <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5-2.png"}}" alt="" />
+            </a>
+        </div>
+        <div class="flex am-products">
+            <div class="pro">
+                <div class="pro-img">
+                    <a href="" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5-3.png"}}" alt="" />
+                    </a>
+                </div>
+                <div class="mg-top">
+                    <a target="_blank" href="/90227438.html&#10;">
+                        <span class="product_description">垫套  深绿色</span>
+                        <span class="product_name">SANELA<br>桑尼拉</span>
+                        <div class="product-price">&yen;59.00</div>
+                        <span class="h-num">货号: 203.701.56</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pro">
+                <div class="pro-img">
+                    <a href="" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5-4.png"}}" alt="" />
+                    </a>
+                </div>
+                <div class="mg-top">
+                    <a target="_blank" href="/90227438.html&#10;">
+                        <span class="product_description">垫套, 蓝色, 绿色</span>
+                        <span class="product_name">STRANDKÅL<br>斯兰库</span>
+                        <div class="product-price">&yen;59.00</div>
+                        <span class="h-num">货号: 203.210.38</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pro">
+                <div class="pro-img">
+                    <a href="" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5-5.png"}}" alt="" />
+                    </a>
+                </div>
+                <div class="mg-top">
+                    <a target="_blank" href="/90227438.html&#10;">
+                        <span class="product_description">垫套, 蓝色, 绿色</span>
+                        <span class="product_name">OTTIL<br>奥提尔</span>
+                        <div class="product-price">&yen;59.00</div>
+                        <span class="h-num">货号: 703.623.85</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pro">
+                <div class="pro-img">
+                    <a href="" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5-6.png"}}" alt="" />
+                    </a>
+                </div>
+                <div class="mg-top">
+                    <a target="_blank" href="/90227438.html&#10;">
+                        <span class="product_description">垫心  灰白</span>
+                        <span class="product_name">SFJÄDRAR<br>费亚达</span>
+                        <div class="product-price">&yen;40.00</div>
+                        <span class="h-num">货号:402.794.15</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pro">
+                <div class="pro-img">
+                    <a href="" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5-7.png"}}" alt="" />
+                    </a>
+                </div>
+                <div class="mg-top">
+                    <a target="_blank" href="/90227438.html&#10;">
+                        <span class="product_description">垫心  灰白</span>
+                        <span class="product_name">FJÄDRAR <br>费亚达</span>
+                        <div class="product-price">&yen;40.00</div>
+                        <span class="h-num">货号:702.794.14</span>
+                    </a>
+                </div>
+            </div>
+            <div class="dev-line"></div>
+            <div class="am-counte">
+                <div class="in-block rel ft-23 ft-wt">
+                    原价 ：<span class="ft-32">&yen;267.00</span>
+                    <div class="red-line"></div>
+                </div>
+                <div class="ft-23 combination">
+                    <span class="ft-wt">组合购买 ：</span>
+                    <span class="counte-price"> &yen;249.00</span>
+                </div>
+                <span class="product_description po-top-5">此价格有效期: 2018.8.30-2018.10.22 </span>
+                <div class="counte-buy in-block ">
+                    为您节省 &yen;18.00
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</div>
+
+<script>
+    require(['jquery'],function ($) {
+        $(function () {
+            var all_height = $(".column.main").height();
+            var w_height =  $(".am-container").height();
+            check_width()
+            $(window).resize(function () {
+                var inner_width = window.innerWidth;
+                // var inner_width=$(window).width()
+                if(inner_width <768){
+                    $(".breadcrumbs").css("display","none");
+                    $(".column.main").css("display","none");
+                }else {
+                    $(".breadcrumbs").css("display","block");
+                    $(".column.main").css("display","block");
+                    check_width()
+                }
+            })
+            function check_width() {
+                var w_width = window.innerWidth;
+                if(w_width<1060&&w_width>760){
+                    num = (1/1060)*w_width;
+                    var de_height = w_height*(1-num);
+                    var chage_height = all_height - de_height;
+                    $(".am-container").css("transform","scale("+num+")");
+                    $(".column.main").css("height",chage_height);
+                }else if(w_width>=1060){
+                    $(".am-container").css("transform","scale(1)");
+                    $(".column.main").css("height","auto");
+                }
+                else if(w_width<760){
+                    $(".column.main").css("height","auto");
+                }
+            }
+        })
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
