@@ -3,7 +3,7 @@
     require(['jquery'],function ($) {
         var w_width = $(window).width();
         if(w_width == 768){
-            $(".am-container").css("transform","scale(0.717757)");
+            $(".am-container").css("transform","scale(0.724528)");
         }
     })
 </script>
@@ -34,11 +34,12 @@
 
     }
     .am-container {
-        width: 1060px;
+        width: 1100px;
         margin: 0 auto;
         font-size: 16px;
         font-family: Verdana, Microsoft YaHei;
         transform-origin:left top;
+        padding: 0 20px;
     }
     .am-container img {
         max-width: 100%;
@@ -84,16 +85,16 @@
     }
 
     .to-buy {
-        font-size: 12px;
+        font-size: 14px;
         display: inline-block;
         border: 2px solid #000;
         border-radius: 5px;
-        padding: 1px 5px;
+        padding: 1px 10px;
         text-align: center;
         background: #fff;
         box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
         color: #1d1d1b;
-        /*margin-top: 5px;*/
+        margin-top: 20px;
     }
 
     .to-buy:hover {
@@ -140,11 +141,11 @@
 
     @media (min-width: 768px){
         .page-wrapper .page-main .columns{
-            max-width: 1060px!important;
+            max-width: 1100px!important;
             padding: 0!important;
         }
         .page-wrapper .breadcrumbs{
-            max-width: 1060px!important;
+            max-width: 1100px!important;
         }
     }
 
@@ -251,46 +252,10 @@
         font-size: 23px;
         font-weight: bold;
     }
-    .f1{
-
-    }
-    .f2{
-
-    }
-    .f3{
-
-    }
-    .f4{
-
-    }
-    .f5{
-
-    }
-    .f6{
-
-    }
-    .f7{
-
-    }
-    .f8{
-
-    }
-    .f9{
-
-    }
-    .f10{
-
-    }
-    .f12{
-
-    }
-    .f13{
-
-    }
     .am-counte{
         float: right;
         text-align: right;
-        margin-top: 10px;
+        /*margin-top: 10px;*/
     }
     .counte-price{
         font-size: 63px;
@@ -311,9 +276,18 @@
 
     }
     .pro-img{
-        margin-right: 40px;
         width: 30%;
         text-align: center;
+        margin-right: 40px;
+    }
+    .f5  .pro-img{
+        height: 150px;
+        display: table;
+        margin-right: 0;
+    }
+    .f5 .pro-img>a{
+        display: table-cell;
+        vertical-align: middle;
     }
     .am-container>div{
         margin-bottom: 100px;
@@ -371,14 +345,30 @@
     .f5 .am-products{
         margin-top: 20px;
     }
+    .to-buy {
+        font-size: 14px;
+        display: inline-block;
+        border: 1.5px solid #000;
+        border-radius: 5px;
+        padding: 1px 10px;
+        text-align: center;
+        background: #fff;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+        color: #1d1d1b;
+         margin-top: 20px;
+    }
+    .f6 .moudle-right .pro{
+        margin-bottom: 10px;
+    }
+    .f5 .flex img{
+        width: 100%;
+    }
 </style>
 
 
 <div class="am-container hidden-xs">
     <div>
-            <a href="" target="_blank">
-                <img src="{{media url="wysiwyg/2018-img/ipost-offer/banner.png"}}" alt="" />
-            </a>
+          <img src="{{media url="wysiwyg/2018-img/ipost-offer/banner.png"}}" alt="" />
     </div>
     <div class="am-title">
         <div class="lower_title">
@@ -388,19 +378,19 @@
     </div>
     <div class="f1 flex flex-start">
         <div class="moudle-left">
-            <a href="" target="_blank">
+            <a href="/catalog/product/view/id/35816/s/06158661/" target="_blank">
                 <img src="{{media url="wysiwyg/2018-img/ipost-offer/f1.png"}}" alt="" />
             </a>
         </div>
         <div class="moudle-right">
             <div class="pro flex">
                 <div class="pro-img">
-                    <a href="" target="_blank">
+                    <a href="/50359845.html" target="_blank">
                         <img src="{{media url="wysiwyg/2018-img/ipost-offer/f1-2.png"}}" alt="" />
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="/90227438.html&#10;">
+                    <a target="_blank" href="/50359845.html">
                         <span class="product_description">靠背椅 深绿色</span>
                         <span class="product_name">STRANDMON 斯佳蒙</span>
                         <div class="product-price ">&yen;1,299.00</div>
@@ -410,12 +400,12 @@
             </div>
             <div class="pro flex">
                 <div class="pro-img">
-                    <a href="" target="_blank">
+                    <a href="/30360010.html" target="_blank">
                         <img src="{{media url="wysiwyg/2018-img/ipost-offer/f1-3.png"}}" alt="" />
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="/90227438.html&#10;">
+                    <a target="_blank" href="/30360010.html">
                         <span class="product_description">脚凳 深绿色</span>
                         <span class="product_name">STRANDMON 斯佳蒙</span>
                         <div class="product-price ">&yen;399.00</div>
@@ -437,24 +427,29 @@
                 <div class="counte-buy in-block ">
                     为您节省 &yen;99.00
                 </div>
+                <div>
+                    <a href="/catalog/product/view/id/35816/s/06158661/" class="to-buy" target="_blank">
+                        立即查看购买
+                    </a>
+                </div>
             </div>
         </div>
     </div>
     <div class="f2 flex flex-start">
         <div class="moudle-left">
-            <a href="" target="_blank">
+            <a href="/catalog/product/view/id/35819/s/06158673/" target="_blank">
                 <img src="{{media url="wysiwyg/2018-img/ipost-offer/f2.png"}}" alt="" />
             </a>
         </div>
         <div class="moudle-right">
             <div class="pro flex">
                 <div class="pro-img">
-                    <a href="" target="_blank">
+                    <a href="/50298423.html" target="_blank">
                         <img src="{{media url="wysiwyg/2018-img/ipost-offer/f2-2.png"}}" alt="" />
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="/90227438.html&#10;">
+                    <a target="_blank" href="/50298423.html">
                         <span class="product_description">遮光窗帘  2幅  灰色</span>
                         <span class="product_name">MARJUN 马瑞恩</span>
                         <div class="product-price ">&yen;299.00</div>
@@ -464,7 +459,7 @@
             </div>
             <div class="pro flex">
                 <div class="pro-img">
-                    <a href="" target="_blank">
+                    <a href="/70344805.html" target="_blank">
                         <img src="{{media url="wysiwyg/2018-img/ipost-offer/f2-3.png"}}" alt="" />
                     </a>
                 </div>
@@ -491,24 +486,29 @@
                 <div class="counte-buy in-block ">
                     为您节省 &yen;79.00
                 </div>
+                <div>
+                    <a href="/catalog/product/view/id/35819/s/06158673/" class="to-buy" target="_blank">
+                        立即查看购买
+                    </a>
+                </div>
             </div>
         </div>
     </div>
     <div class="f3 flex flex-start">
         <div class="moudle-left">
-            <a href="" target="_blank">
+            <a href="/catalog/product/view/id/35817/s/06158683/" target="_blank">
                 <img src="{{media url="wysiwyg/2018-img/ipost-offer/f3.png"}}" alt="" />
             </a>
         </div>
         <div class="moudle-right">
             <div class="pro flex">
                 <div class="pro-img">
-                    <a href="" target="_blank">
+                    <a href="/10351568.html" target="_blank">
                         <img src="{{media url="wysiwyg/2018-img/ipost-offer/f3-2.png"}}" alt="" />
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="/90227438.html&#10;">
+                    <a target="_blank" href="/10351568.html">
                         <span class="product_description">书架  白色</span>
                         <span class="product_name">BILLY 毕利</span>
                         <div class="product-price ">&yen;399.00</div>
@@ -518,12 +518,12 @@
             </div>
             <div class="pro flex">
                 <div class="pro-img">
-                    <a href="" target="_blank">
+                    <a href="/30275559.html" target="_blank">
                         <img src="{{media url="wysiwyg/2018-img/ipost-offer/f3-3.png"}}" alt="" />
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="/90227438.html&#10;">
+                    <a target="_blank" href="/30275559.html">
                         <span class="product_description">半玻璃柜门  白色</span>
                         <span class="product_name">OXBERG 奥克伯</span>
                         <div class="product-price ">&yen;150.00</div>
@@ -545,24 +545,29 @@
                 <div class="counte-buy in-block ">
                     为您节省 &yen;100.00
                 </div>
+                <div>
+                    <a href="/catalog/product/view/id/35817/s/06158683/" class="to-buy" target="_blank">
+                        立即查看购买
+                    </a>
+                </div>
             </div>
         </div>
     </div>
     <div class="f4 flex flex-start">
         <div class="moudle-left">
-            <a href="" target="_blank">
+            <a href="/catalog/product/view/id/35821/s/06158660/" target="_blank">
                 <img src="{{media url="wysiwyg/2018-img/ipost-offer/f4.png"}}" alt="" />
             </a>
         </div>
         <div class="moudle-right">
             <div class="pro flex">
                 <div class="pro-img">
-                    <a href="" target="_blank">
+                    <a href="/79219519.html" target="_blank">
                         <img src="{{media url="wysiwyg/2018-img/ipost-offer/f4-2.png"}}" alt="" />
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="/90227438.html&#10;">
+                    <a target="_blank" href="/79219519.html">
                         <span class="product_description">椅子 粉红色/桦木椅面, 粉红色</span>
                         <span class="product_name">LEIFARNE 雷夫尼</span>
                         <div class="product-price ">&yen;499.00</div>
@@ -572,12 +577,12 @@
             </div>
             <div class="pro flex">
                 <div class="pro-img">
-                    <a href="" target="_blank">
+                    <a href="/80365717.html" target="_blank">
                         <img src="{{media url="wysiwyg/2018-img/ipost-offer/f4-3.png"}}" alt="" />
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="/90227438.html&#10;">
+                    <a target="_blank" href="/80365717.html">
                         <span class="product_description">桌子  白蜡木贴面</span>
                         <span class="product_name">LISABO 利萨伯</span>
                         <div class="product-price ">&yen;999.00</div>
@@ -587,12 +592,12 @@
             </div>
             <div class="pro flex">
                 <div class="pro-img">
-                    <a href="" target="_blank">
+                    <a href="/90318527.html" target="_blank">
                         <img src="{{media url="wysiwyg/2018-img/ipost-offer/f4-4.png"}}" alt="" />
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="/90227438.html&#10;">
+                    <a target="_blank" href="/90318527.html">
                         <span class="product_description">餐具18件  淡粉红色</span>
                         <span class="product_name">DINERA 代诺拉</span>
                         <div class="product-price ">&yen;179.00</div>
@@ -614,27 +619,32 @@
                 <div class="counte-buy in-block ">
                     为您节省 &yen;175.00
                 </div>
+                <div>
+                    <a href="/catalog/product/view/id/35821/s/06158660/" class="to-buy" target="_blank">
+                        立即查看购买
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="f5">
+    <div class="f5 am-cf">
         <div class="flex">
-            <a href="" target="_blank" style="width: 46%">
+            <a href="/catalog/product/view/id/35818/s/06158667/" target="_blank" style="width: 46.5%">
                 <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5.png"}}" alt="" />
             </a>
-            <a href="" target="_blank" style="width: 52.5%">
+            <a href="/catalog/product/view/id/35818/s/06158667/" target="_blank" style="width: 52%;text-align: right">
                 <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5-2.png"}}" alt="" />
             </a>
         </div>
         <div class="flex am-products">
             <div class="pro">
                 <div class="pro-img">
-                    <a href="" target="_blank">
+                    <a href="/20370156.html" target="_blank">
                         <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5-3.png"}}" alt="" />
                     </a>
                 </div>
                 <div class="mg-top">
-                    <a target="_blank" href="/90227438.html&#10;">
+                    <a target="_blank" href="/20370156.html">
                         <span class="product_description">垫套  深绿色</span>
                         <span class="product_name">SANELA<br>桑尼拉</span>
                         <div class="product-price">&yen;59.00</div>
@@ -644,12 +654,12 @@
             </div>
             <div class="pro">
                 <div class="pro-img">
-                    <a href="" target="_blank">
-                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5-4.png"}}" alt="" />
+                    <a href="/20321038.html" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5-5.png"}}" alt="" />
                     </a>
                 </div>
                 <div class="mg-top">
-                    <a target="_blank" href="/90227438.html&#10;">
+                    <a target="_blank" href="/20321038.html">
                         <span class="product_description">垫套, 蓝色, 绿色</span>
                         <span class="product_name">STRANDKÅL<br>斯兰库</span>
                         <div class="product-price">&yen;59.00</div>
@@ -659,12 +669,12 @@
             </div>
             <div class="pro">
                 <div class="pro-img">
-                    <a href="" target="_blank">
-                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5-5.png"}}" alt="" />
+                    <a href="/70362385.html" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5-4.png"}}" alt="" />
                     </a>
                 </div>
                 <div class="mg-top">
-                    <a target="_blank" href="/90227438.html&#10;">
+                    <a target="_blank" href="/70362385.html">
                         <span class="product_description">垫套, 蓝色, 绿色</span>
                         <span class="product_name">OTTIL<br>奥提尔</span>
                         <div class="product-price">&yen;59.00</div>
@@ -674,12 +684,12 @@
             </div>
             <div class="pro">
                 <div class="pro-img">
-                    <a href="" target="_blank">
+                    <a href="/40279415.html" target="_blank">
                         <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5-6.png"}}" alt="" />
                     </a>
                 </div>
                 <div class="mg-top">
-                    <a target="_blank" href="/90227438.html&#10;">
+                    <a target="_blank" href="/40279415.html">
                         <span class="product_description">垫心  灰白</span>
                         <span class="product_name">SFJÄDRAR<br>费亚达</span>
                         <div class="product-price">&yen;40.00</div>
@@ -689,12 +699,12 @@
             </div>
             <div class="pro">
                 <div class="pro-img">
-                    <a href="" target="_blank">
+                    <a href="/70279414.html" target="_blank">
                         <img src="{{media url="wysiwyg/2018-img/ipost-offer/f5-7.png"}}" alt="" />
                     </a>
                 </div>
                 <div class="mg-top">
-                    <a target="_blank" href="/90227438.html&#10;">
+                    <a target="_blank" href="/70279414.html">
                         <span class="product_description">垫心  灰白</span>
                         <span class="product_name">FJÄDRAR <br>费亚达</span>
                         <div class="product-price">&yen;40.00</div>
@@ -703,25 +713,117 @@
                 </div>
             </div>
             <div class="dev-line"></div>
+
+        </div>
+        <div class="am-counte">
+            <div class="in-block rel ft-23 ft-wt">
+                原价 ：<span class="ft-32">&yen;267.00</span>
+                <div class="red-line"></div>
+            </div>
+            <div class="ft-23 combination">
+                <span class="ft-wt">组合购买 ：</span>
+                <span class="counte-price"> &yen;249.00</span>
+            </div>
+            <span class="product_description po-top-5">此价格有效期: 2018.8.30-2018.10.22 </span>
+            <div class="counte-buy in-block ">
+                为您节省 &yen;18.00
+            </div>
+            <div>
+                <a href="/catalog/product/view/id/35818/s/06158667/" class="to-buy" target="_blank">
+                    立即查看购买
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="f6 flex flex-start">
+        <div class="moudle-left" style="width: 47%">
+            <a href="/catalog/product/view/id/35820/s/06158677/" target="_blank">
+                <img src="{{media url="wysiwyg/2018-img/ipost-offer/f6.png"}}" alt="" style="width:100%" / >
+            </a>
+        </div>
+        <div class="moudle-right">
+            <div class="pro flex">
+                <div class="pro-img">
+                    <a href="/50193317.html" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f6-2.png"}}" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="/50193317.html">
+                        <span class="product_description">白板笔  多色</span>
+                        <span class="product_name">MÅLA 莫拉</span>
+                        <div class="product-price ">&yen;29.90</div>
+                        <span class="h-num">货号: 501.933.17</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pro flex">
+                <div class="pro-img">
+                    <a href="/50193322.html" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f6-3.png"}}" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="/50193322.html">
+                        <span class="product_description">粉笔  多色</span>
+                        <span class="product_name">MÅLA 莫拉</span>
+                        <div class="product-price ">&yen;14.90</div>
+                        <span class="h-num">货号:501.933.22</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pro flex">
+                <div class="pro-img">
+                    <a href="/30167852.html" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f6-4.png"}}" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="/30167852.html">
+                        <span class="product_description">书写板  软木/白色</span>
+                        <span class="product_name">MÅLA 莫拉</span>
+                        <div class="product-price ">&yen;99.00</div>
+                        <span class="h-num">货号:301.678.52</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pro flex">
+                <div class="pro-img">
+                    <a href="/60324073.html" target="_blank">
+                        <img src="{{media url="wysiwyg/2018-img/ipost-offer/f6-5.png"}}" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="/60324073.html">
+                        <span class="product_description">画纸卷</span>
+                        <span class="product_name">MÅLA 莫拉</span>
+                        <div class="product-price ">&yen;29.90</div>
+                        <span class="h-num">货号:603.240.73</span>
+                    </a>
+                </div>
+            </div>
+            <div class="dev-line"></div>
             <div class="am-counte">
                 <div class="in-block rel ft-23 ft-wt">
-                    原价 ：<span class="ft-32">&yen;267.00</span>
+                    原价 ：<span class="ft-32">&yen;173.70</span>
                     <div class="red-line"></div>
                 </div>
                 <div class="ft-23 combination">
                     <span class="ft-wt">组合购买 ：</span>
-                    <span class="counte-price"> &yen;249.00</span>
+                    <span class="counte-price"> &yen;149.00</span>
                 </div>
                 <span class="product_description po-top-5">此价格有效期: 2018.8.30-2018.10.22 </span>
                 <div class="counte-buy in-block ">
-                    为您节省 &yen;18.00
+                    为您节省 &yen;24.70
+                </div>
+                <div>
+                    <a href="/catalog/product/view/id/35820/s/06158677/" class="to-buy" target="_blank">
+                        立即查看购买
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-
-    
-
 </div>
 
 <script>
@@ -744,13 +846,13 @@
             })
             function check_width() {
                 var w_width = window.innerWidth;
-                if(w_width<1060&&w_width>760){
-                    num = (1/1060)*w_width;
+                if(w_width<1100&&w_width>760){
+                    num = (1/1100)*w_width;
                     var de_height = w_height*(1-num);
                     var chage_height = all_height - de_height;
                     $(".am-container").css("transform","scale("+num+")");
                     $(".column.main").css("height",chage_height);
-                }else if(w_width>=1060){
+                }else if(w_width>=1100){
                     $(".am-container").css("transform","scale(1)");
                     $(".column.main").css("height","auto");
                 }
